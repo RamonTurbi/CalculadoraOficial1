@@ -12,12 +12,12 @@ using CalculadoraOficial.Clases;
 
 namespace CalculadoraOficial
 {
-    public partial class Form1 : Form 
+    public partial class Form1 : Form
     {
         OpreacionesAritmeticas Operaciones = new OpreacionesAritmeticas();
         private double PrimeraCantidad;
         private double SegundaCantidad;
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -27,22 +27,20 @@ namespace CalculadoraOficial
         {
             PrimeraCantidad = Convert.ToDouble(txtprimeraCantidad.Text);
             SegundaCantidad = Convert.ToDouble(txtsegundaCantidad.Text);
-            txtResultado.Text = Convert.ToString(Operaciones.Suma(PrimeraCantidad,SegundaCantidad));
+            txtResultado.Text = Convert.ToString(Operaciones.Suma(PrimeraCantidad, SegundaCantidad));
         }
 
         private void btnResta_Click(object sender, EventArgs e)
         {
             PrimeraCantidad = Convert.ToDouble(txtprimeraCantidad.Text);
             SegundaCantidad = Convert.ToDouble(txtsegundaCantidad.Text);
-            txtResultado.Text = Convert.ToString(Operaciones.Resta(PrimeraCantidad,SegundaCantidad));
+            txtResultado.Text = Convert.ToString(Operaciones.Resta(PrimeraCantidad, SegundaCantidad));
         }
-
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
             PrimeraCantidad = Convert.ToDouble(txtprimeraCantidad.Text);
             SegundaCantidad = Convert.ToDouble(txtsegundaCantidad.Text);
             txtResultado.Text = Convert.ToString(Operaciones.Multiplicacion(PrimeraCantidad, SegundaCantidad));
-
         }
 
         private void btnDividir_Click(object sender, EventArgs e)
