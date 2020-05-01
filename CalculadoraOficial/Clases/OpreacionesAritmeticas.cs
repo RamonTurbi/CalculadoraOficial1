@@ -12,7 +12,7 @@ namespace CalculadoraOficial.Clases
     {
         //Aqui utilizo el encapsulamiento privatizando esta variable para que solo pueda ser utilizado en esta clase
         private double resultado;
-        //aqui las Variables cantidauno y cantidad2 se toman como parametros de entrada del metodo las cuales influiran en el resultado del metodo
+        //aqui las Variables cantidauno y cantidad2 se toman como parametros de entrada del metodo las cuales influiran en el resultado del metodo.
         public double Suma(double cantidaUno, double cantidad2)
         {
             resultado = cantidaUno + cantidad2;
